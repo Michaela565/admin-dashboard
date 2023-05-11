@@ -27,18 +27,70 @@ body{
 }
 
 .up-half{
+    margin: 14px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .searchbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 1 / 3;
 }
 
 .searchbar > button{
     padding: 0 16px;
+}
+
+.info-holder{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: right;
+    margin-right: 4em;
+    margin-left: 2em;
+    align-items: center;
+    gap: 20px;
+    grid-column: 3 / 4;
+}
+
+.down-half{
+    margin: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.greeting{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.greeting > .largest{
+    grid-column: 2 / 3;
+}
+
+.greeting > .normal{
+    grid-column: 2 / 3;
+}
+
+.greeting > img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.create-btns{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 40px;
+    gap: 40px;
+    justify-content: right;
+    align-content: space-evenly;
+    margin-right: 4em;
+}
+
+.create-btns > button{
+    background-color: #34d399;
+    border-radius: 25px;
 }
 
 .projects{
@@ -80,7 +132,7 @@ body{
 }
 
 .pfp-large{
-    width: 65px;
+    width: 70px;
     height: auto;
 }
 
