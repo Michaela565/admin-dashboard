@@ -115,6 +115,7 @@ a:hover{
     justify-content: right;
     align-content: space-evenly;
     margin-right: 4em;
+    
 }
 
 .create-btns > button{
@@ -122,6 +123,17 @@ a:hover{
     border-radius: 25px;
     color: #ffffff;
     font-weight: 500;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s;
+}
+
+.create-btns > button:hover{
+    background-color: #34d399;
+}
+
+.create-btns > button:active{
+    background-color: #34d399;
+    transform: translateY(5px);
 }
 
 .projects{
@@ -144,6 +156,11 @@ a:hover{
     grid-template-rows: 2fr auto;
     align-items: center;
     padding: 20px;
+    transition: all 0.2s;
+}
+
+.project:hover{
+    transform: scale(1.03, 1.03);
 }
 
 .icons{
@@ -232,12 +249,22 @@ a:hover{
     display: flex;
     align-items: center;
     color: #ffffff;
+    transition: all 0.2s;
+}
+
+.nav-item:hover{
+    background-color: #34d399;
 }
 
 .nav-item > img{
     padding: 10px 20px;
     text-align: center;
     filter: invert(1);
+    transition: all 0.2s;
+}
+
+.nav-item > img:hover{
+    transform: rotate(360deg);
 }
 
 .logo{
@@ -251,8 +278,8 @@ a:hover{
     filter: invert(1);
 }
 
-.logo, .navigation{
-    margin-right: 16px;
+.nav-item, .logo{
+    padding-right: 16px;
 }
 
 #search{
