@@ -8,7 +8,7 @@
 
 body{
     height: 100vh;
-    overflow: hidden;
+    overflow:hidden;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-row: 1fr 6fr;
@@ -20,6 +20,11 @@ body{
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s;
+}
+
+.box:hover{
+    transform: scale(1.03, 1.03);
 }
 
 .sidebar{
@@ -159,9 +164,6 @@ a:hover{
     transition: all 0.2s;
 }
 
-.project:hover{
-    transform: scale(1.03, 1.03);
-}
 
 .icons{
     display: flex;
